@@ -1,0 +1,7 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Applied augmentation
+Training....
+Epoch [1/1], Loss: 0.3287, Accuracy: 90.12%
+Validation Loss: 0.1064, Validation Accuracy: 96.86%
+Validation loss improved...

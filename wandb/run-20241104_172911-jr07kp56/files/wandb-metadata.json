@@ -1,0 +1,28 @@
+{
+  "os": "Windows-10-10.0.22631-SP0",
+  "python": "3.11.9",
+  "startedAt": "2024-11-04T15:29:11.433560Z",
+  "program": "D:\\Masters\\1st_year\\advanced_neural_networks\\Homeowork3\\main.py",
+  "codePath": "main.py",
+  "email": "0607andreea.ro@gmail.com",
+  "root": "D:\\Masters\\1st_year\\advanced_neural_networks\\Homeowork3",
+  "host": "DESKTOP-73222OO",
+  "username": "User",
+  "executable": "D:\\University\\advanced_neural_networks\\Scripts\\python.exe",
+  "codePathLocal": "main.py",
+  "cpu_count": 6,
+  "cpu_count_logical": 12,
+  "disk": {
+    "/": {
+      "total": "354822385664",
+      "used": "218295058432"
+    }
+  },
+  "memory": {
+    "total": "7897935872"
+  },
+  "cpu": {
+    "count": 6,
+    "countLogical": 12
+  }
+}

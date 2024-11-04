@@ -1,0 +1,50 @@
+Applied augmentation
+Training....
+Traceback (most recent call last):
+  File "D:\Masters\1st_year\advanced_neural_networks\Homeowork3\main.py", line 148, in <module>
+    main(config)
+  File "D:\Masters\1st_year\advanced_neural_networks\Homeowork3\main.py", line 82, in main
+    for images, labels in train_loader:
+  File "D:\University\advanced_neural_networks\Lib\site-packages\torch\utils\data\dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\University\advanced_neural_networks\Lib\site-packages\torch\utils\data\dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\advanced_neural_networks\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 50, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\advanced_neural_networks\Lib\site-packages\torch\utils\data\dataset.py", line 420, in __getitems__
+    return [self.dataset[self.indices[idx]] for idx in indices]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\advanced_neural_networks\Lib\site-packages\torch\utils\data\dataset.py", line 420, in <listcomp>
+    return [self.dataset[self.indices[idx]] for idx in indices]
+            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\Masters\1st_year\advanced_neural_networks\Homeowork3\datasets\datasets_factory.py", line 35, in __getitem__
+    data = self.transform(data)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\advanced_neural_networks\Lib\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+    img = t(img)
+          ^^^^^^
+  File "D:\University\advanced_neural_networks\Lib\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+    img = t(img)
+          ^^^^^^
+  File "D:\University\advanced_neural_networks\Lib\site-packages\torch\nn\modules\module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\advanced_neural_networks\Lib\site-packages\torch\nn\modules\module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\advanced_neural_networks\Lib\site-packages\torchvision\transforms\transforms.py", line 1372, in forward
+    return F.rotate(img, angle, self.interpolation, self.expand, self.center, fill)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\advanced_neural_networks\Lib\site-packages\torchvision\transforms\functional.py", line 1132, in rotate
+    return F_t.rotate(img, matrix=matrix, interpolation=interpolation.value, expand=expand, fill=fill)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\advanced_neural_networks\Lib\site-packages\torchvision\transforms\_functional_tensor.py", line 665, in rotate
+    grid = _gen_affine_grid(theta, w=w, h=h, ow=ow, oh=oh)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\advanced_neural_networks\Lib\site-packages\torchvision\transforms\_functional_tensor.py", line 598, in _gen_affine_grid
+    rescaled_theta = theta.transpose(1, 2) / torch.tensor([0.5 * w, 0.5 * h], dtype=theta.dtype, device=theta.device)
+                     ^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
